@@ -1,6 +1,9 @@
 export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+    plugins: {
+        tailwindcss: {},
+        "postcss-focus-visible": {
+            replaceWith: "[data-focus-visible-added]",
+        },
+        autoprefixer: {},
+    },
+};
